@@ -19,7 +19,7 @@ class _CreateNoteState extends State<CreateNote> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text("Create note"),
+        title: const Text("Create item"),
         actions: [
           IconButton(
               onPressed: () {
@@ -28,9 +28,9 @@ class _CreateNoteState extends State<CreateNote> {
                 if (formKey.currentState!.validate()) {
                   db
                       .createNote(NoteModel(
-                      noteTitle: title.text,
-                      noteContent: content.text,
-                      createdAt: DateTime.now().toIso8601String()))
+                          noteTitle: title.text,
+                          noteContent: content.text,
+                          createdAt: DateTime.now().toIso8601String()))
                       .whenComplete(() {
                     //When this value is true
                     Navigator.of(context).pop(true);
@@ -41,7 +41,7 @@ class _CreateNoteState extends State<CreateNote> {
         ],
       ),
       body: Form(
-        //I forgot to specify key
+          //I forgot to specify key
           key: formKey,
           child: Padding(
             padding: const EdgeInsets.all(10.0),

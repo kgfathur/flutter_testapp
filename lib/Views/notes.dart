@@ -45,7 +45,7 @@ class _NotesState extends State<Notes> {
   Widget build(BuildContext context) {
     return Scaffold(
         appBar: AppBar(
-          title: const Text("Notes"),
+          title: const Text("Money Manager"),
         ),
         floatingActionButton: FloatingActionButton(
           onPressed: () {
@@ -53,7 +53,7 @@ class _NotesState extends State<Notes> {
             //Now it works properly
             //We will do delete now
             Navigator.push(context,
-                MaterialPageRoute(builder: (context) => const CreateNote()))
+                    MaterialPageRoute(builder: (context) => const CreateNote()))
                 .then((value) {
               if (value) {
                 //This will be called
@@ -118,9 +118,9 @@ class _NotesState extends State<Notes> {
                                           //Now update method
                                           db
                                               .updateNote(
-                                              title.text,
-                                              content.text,
-                                              items[index].noteId)
+                                                  title.text,
+                                                  content.text,
+                                                  items[index].noteId)
                                               .whenComplete(() {
                                             //After update, note will refresh
                                             _refresh();
@@ -138,7 +138,7 @@ class _NotesState extends State<Notes> {
                                     ],
                                   ),
                                 ],
-                                title: const Text("Update note"),
+                                title: const Text("Update item"),
                                 content: Column(
                                     mainAxisSize: MainAxisSize.min,
                                     children: [
