@@ -1,0 +1,60 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"type": "flutter",
+			"command": "flutter",
+			"args": [
+				"build",
+				"apk",
+				"--debug"
+			],
+			"group": "build",
+			"problemMatcher": [],
+			"label": "flutter build apk --debug",
+			"detail": ""
+		},
+		{
+			"type": "flutter",
+			"command": "flutter",
+			"args": [
+				"build",
+				"apk",
+				"--release"
+			],
+			"group": {
+				"kind": "build",
+				"isDefault": true
+			},
+			"problemMatcher": [],
+			"label": "flutter build apk --release",
+			"detail": ""
+		},
+		{
+			"type": "flutter",
+			"command": "flutter",
+			"args": [
+				"build",
+				"appbundle",
+				"--debug"
+			],
+			"group": "build",
+			"problemMatcher": [],
+			"label": "flutter build appbundle --debug",
+			"detail": ""
+		},
+		{
+			"type": "flutter",
+			"command": "flutter",
+			"args": [
+				"build",
+				"appbundle",
+				"--release"
+			],
+			"group": "build",
+			"problemMatcher": [],
+			"label": "flutter build appbundle --release",
+			"detail": ""
+		}
+	]
+}

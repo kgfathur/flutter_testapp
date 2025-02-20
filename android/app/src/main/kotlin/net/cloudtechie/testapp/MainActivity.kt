@@ -1,4 +1,4 @@
-package net.cloudtechie.testapp
+package net.cloudtechie.notesapp
 
 import io.flutter.embedding.android.FlutterActivity
 

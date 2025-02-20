@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:testapp/JsonModels/note_model.dart';
-import 'package:testapp/SQLite/sqlite.dart';
+import 'package:notesapp/JsonModels/note_model.dart';
+import 'package:notesapp/SQLite/sqlite.dart';
 
 class CreateNote extends StatefulWidget {
   const CreateNote({super.key});
@@ -19,7 +19,7 @@ class _CreateNoteState extends State<CreateNote> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text("Create item"),
+        title: const Text("Create note"),
         actions: [
           IconButton(
               onPressed: () {

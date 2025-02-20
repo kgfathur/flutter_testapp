@@ -1,6 +1,6 @@
-# testapp
+# notesapp
 
-Flutter Test App.
+Notes App.
 
 ## Getting Started
 
@@ -24,19 +24,19 @@ List of devices attached
 XXYYZZ123     device
 
 # Sample command to List app data dir  
-$ adb -s XXYYZZ123 shell run-as net.cloudtechie.testapp ls -lh /data/data/net.cloudtechie.testapp
+$ adb -s XXYYZZ123 shell run-as net.cloudtechie.notesapp ls -lh /data/data/net.cloudtechie.notesapp
 
 # Or interactively
 $ adb -s XXYYZZ123 shell
 
 # inside adb shell
-$ run-as net.cloudtechie.testapp
+$ run-as net.cloudtechie.notesapp
 
 # Sample
-m1xx:/ $ run-as net.cloudtechie.testapp
-m1xx:/data/user/0/net.cloudtechie.testapp $ pwd
-/data/user/0/net.cloudtechie.testapp
-m1xx:/data/user/0/net.cloudtechie.testapp $ ls -lh
+m1xx:/ $ run-as net.cloudtechie.notesapp
+m1xx:/data/user/0/net.cloudtechie.notesapp $ pwd
+/data/user/0/net.cloudtechie.notesapp
+m1xx:/data/user/0/net.cloudtechie.notesapp $ ls -lh
 total 18K
 drwxrwx--x 3 u0_a432 u0_a432       3.3K 2024-12-29 14:11 app_flutter
 drwxrws--x 2 u0_a432 u0_a432_cache 3.3K 2024-12-29 13:37 cache
@@ -44,5 +44,5 @@ drwxrws--x 4 u0_a432 u0_a432_cache 3.3K 2024-12-29 14:11 code_cache
 drwxrwx--x 2 u0_a432 u0_a432       3.3K 2024-12-29 13:47 databases
 drwxrwx--x 2 u0_a432 u0_a432       3.3K 2024-12-29 14:11 files
 drwxrwx--x 2 u0_a432 u0_a432       3.3K 2024-12-29 14:11 shared_prefs
-m14x:/data/user/0/net.cloudtechie.testapp $
+m14x:/data/user/0/net.cloudtechie.notesapp $
 ```

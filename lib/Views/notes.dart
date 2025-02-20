@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:intl/intl.dart';
-import 'package:testapp/JsonModels/note_model.dart';
-import 'package:testapp/SQLite/sqlite.dart';
-import 'package:testapp/Views/create_note.dart';
+import 'package:notesapp/JsonModels/note_model.dart';
+import 'package:notesapp/SQLite/sqlite.dart';
+import 'package:notesapp/Views/create_note.dart';
 
 class Notes extends StatefulWidget {
   const Notes({super.key});
@@ -52,7 +52,7 @@ class _NotesState extends State<Notes> {
   Widget build(BuildContext context) {
     return Scaffold(
         appBar: AppBar(
-          title: const Text("Money Manager"),
+          title: const Text("Notes App"),
         ),
         floatingActionButton: FloatingActionButton(
           onPressed: () {
@@ -170,7 +170,7 @@ class _NotesState extends State<Notes> {
                                           ],
                                         ),
                                       ],
-                                      title: const Text("Update item"),
+                                      title: const Text("Update note"),
                                       content: Column(
                                           mainAxisSize: MainAxisSize.min,
                                           children: [

@@ -1,11 +1,11 @@
 {
-    "name": "testapp",
-    "short_name": "testapp",
+    "name": "notesapp",
+    "short_name": "notesapp",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#0175C2",
     "theme_color": "#0175C2",
-    "description": "Flutter Test App.",
+    "description": "Notes App.",
     "orientation": "portrait-primary",
     "prefer_related_applications": false,
     "icons": [
